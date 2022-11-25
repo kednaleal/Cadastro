@@ -10,11 +10,16 @@
 <body>
     <h3>Cadastro</h3>
     <form>
-        <label>Cep:</label><input maxlength="8" type="text" id="cep"><br><br>
+        <div class="msgErro">
+            <label>Cep:</label><input maxlength="8" type="text" id="cep"  onblur="validarCep" onfocus="redefinirCep"><br><br>
+            <span id="erro-cep"></span>
+        </div>
         <label>Rua:</label><input size="40" type="text" id="rua"><br><br>
         <label>Bairro:</label><input type="text" id="bairro"><br><br>
-        <label>Cidade:</label><input type="text" id="ciadade"><br><br>
+        <label>Cidade:</label><input type="text" id="cidade"><br><br>
         <label>Estado:</label><input type="text" id="estado"><br><br>
+        <button onclick="cadastrar()" type="button">Cadastrar</button>
+        <button type="reset" >Limpar</button>
     </form>
     <script src="script.js"></script>
 </body>

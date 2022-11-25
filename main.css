@@ -1,0 +1,13 @@
+input:invalid{
+    border-color:crimson;
+    box-shadow: 0px 0px 3px crimson;
+
+}
+
+input:invalid{
+    box-shadow: none;
+}
+
+span{
+    color: crimson;
+}
